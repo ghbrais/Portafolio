@@ -156,6 +156,30 @@
 
         <!-- Project Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card: ECOBIN -->
+            <article class="project-card group cursor-pointer" data-category="vhdl" onclick="openModal('ECOBIN · Papeleras Inteligentes', 'Proyecto empresarial y técnico desarrollado junto a compañeros de Ingeniería de Computadores en la UCM («Tú tiras, ECOBIN piensa»). Papelera inteligente de orificio único con clasificación automática en 4 fracciones (>95% de precisión) mediante Edge AI en NVIDIA Jetson, bandeja giratoria 360° hacia 4 cubetas de 60 L, conectividad 4G IoT y panel ESG en AWS. Modelo de suscripción HaaS + SaaS (contratos a 36 meses, cuota media de 240 €/mes, inversión inicial proyectada de 78.500 € y hasta un 60% de reducción en costes de gestión de residuos).', 'ecobin.jpg', ['CTO · Edge AI', 'NVIDIA Jetson', 'Visión Artificial', 'AWS & ESG', 'HaaS + SaaS'])">
+                <div class="overflow-hidden rounded-t-lg relative aspect-[4/3] bg-earth-200">
+                    <img src="ecobin.jpg" alt="Papelera inteligente ECOBIN en acabado metálico oscuro con aro iluminado y cuatro iconos de reciclaje" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-forest-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6 bg-white rounded-b-lg border border-t-0 border-earth-200 group-hover:border-forest-200 transition-colors">
+                    <p class="text-xs text-forest-600 uppercase tracking-wider mb-1">Proyecto Grande · CTO · Edge AI</p>
+                    <h3 class="font-serif text-2xl text-forest-950">ECOBIN</h3>
+                </div>
+            </article>
+
+            <!-- Card: Faro Lunar (Nodo Lunar Shackleton) -->
+            <article class="project-card group cursor-pointer" data-category="vhdl" onclick="openModal('Faro Lunar · Nodo Lunar Shackleton', 'Estudio conceptual de un nodo/faro lunar en el entorno del cráter Shackleton (Polo Sur lunar), desarrollado en el IV Curso de Exploración Espacial de la UCM. Integra gestión de datos y software (OBDH) sobre microcontrolador STM32 con memoria híbrida FRAM + Flash ECC, muestreo compresivo y transmisión store-and-forward, protección COTS (limitadores SEL, watchdog externo, redundancia fría/TMR y blindaje local), bus regulado de 28 V DC, paneles solares verticales GaAs, batería Li-Ion de 615 Wh (hasta 72 h en eclipse) y control térmico pasivo.', 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1000&q=80', ['Exploración Espacial UCM', 'STM32 & OBDH', 'Protección COTS', 'EPS 28V · 615 Wh', 'Control Térmico Pasivo'])">
+                <div class="overflow-hidden rounded-t-lg relative aspect-[4/3] bg-earth-200">
+                    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80" alt="Faro Lunar Nodo Shackleton" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-forest-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6 bg-white rounded-b-lg border border-t-0 border-earth-200 group-hover:border-forest-200 transition-colors">
+                    <p class="text-xs text-forest-600 uppercase tracking-wider mb-1">Proyecto Grande · Espacio UCM</p>
+                    <h3 class="font-serif text-2xl text-forest-950">Faro Lunar · Shackleton</h3>
+                </div>
+            </article>
+
             <!-- Card: Smart Bin -->
             <article class="project-card group cursor-pointer" data-category="vhdl" onclick="openModal('Smart Bin (Premios RetoTech)', 'Proyecto ganador en los Premios RetoTech de Fundación Endesa en Canarias, representando al IES Santo Tomás de Aquino. Consiste en una papelera inteligente desarrollada con hardware libre, uniendo tecnología, sostenibilidad y emprendimiento.', 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1000&q=80', ['Premio', 'Hardware', 'Emprendimiento'])">
                 <div class="overflow-hidden rounded-t-lg relative aspect-[4/3] bg-earth-200">
@@ -327,9 +351,9 @@
                 <h3 class="font-serif text-3xl text-forest-950 mb-8 border-b border-earth-200 pb-4">Formación y Cursos</h3>
                 <div class="space-y-8">
                     <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-forest-500 before:rounded-full">
-                        <p class="text-sm font-semibold text-forest-600 tracking-wider mb-1">Actualmente en 3º Curso</p>
-                        <h4 class="font-medium text-xl text-earth-900 mb-1">Grado en Ingeniería de Computadores</h4>
-                        <p class="text-earth-900/70 text-sm">Universidad Complutense de Madrid (UCM) • Inmerso en materias clave como Arquitectura de Computadores, Ampliación de Redes, Sistemas Operativos y Programación de Sistemas y Dispositivos.</p>
+                        <p class="text-sm font-semibold text-forest-600 tracking-wider mb-1">Grado en Ingeniería de Computadores</p>
+                        <h4 class="font-medium text-xl text-earth-900 mb-1">Universidad Complutense de Madrid (UCM)</h4>
+                        <p class="text-earth-900/70 text-sm">Inmerso en materias clave como Arquitectura de Computadores, Ampliación de Redes, Ampliación de Sistemas Operativos, Sistemas Operativos y Programación de Sistemas y Dispositivos.</p>
                     </div>
                     
                     <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-forest-500 before:rounded-full">
@@ -343,9 +367,9 @@
                     </div>
 
                     <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-forest-500 before:rounded-full">
-                        <p class="text-sm font-semibold text-forest-600 tracking-wider mb-1">Próximamente (Nov 2026)</p>
+                        <p class="text-sm font-semibold text-forest-600 tracking-wider mb-1">Exploración Espacial · UCM</p>
                         <h4 class="font-medium text-xl text-earth-900 mb-1">Exploración Espacial IV Edición</h4>
-                        <p class="text-earth-900/70 text-sm">Participación en el <a href="https://jcuvac.ucm.es/ESH-CURSO-ESPACIO-2026/EE_index_2026.html" target="_blank" rel="noopener noreferrer" class="text-forest-600 hover:underline">curso de la UCM</a> sobre el "Nuevo Espacio", pequeños satélites e instrumentación espacial.</p>
+                        <p class="text-earth-900/70 text-sm">Participación en el <a href="https://jcuvac.ucm.es/ESH-CURSO-ESPACIO-2026/EE_index_2026.html" target="_blank" rel="noopener noreferrer" class="text-forest-600 hover:underline">curso de la UCM</a> sobre el "Nuevo Espacio", pequeños satélites, instrumentación espacial y el proyecto de equipo del Nodo Lunar Shackleton.</p>
                     </div>
                 </div>
             </aside>
